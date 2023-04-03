@@ -126,6 +126,8 @@ class Controller:
                         player.add_cards(game_obj.draw_deck())
                         main_display()
                         game_condition()
+                        if self.loop_flag == False:
+                            break
                     case 1:
                         player.stand() 
             if com.total_value >= 17 and player.player_stand == True:
