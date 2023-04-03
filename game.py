@@ -1,6 +1,4 @@
 import random
-import os
-import time
 from trump import Trump
 
 

@@ -1,5 +1,3 @@
-import random
-from trump import Trump
 
 class Player:
 
