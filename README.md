@@ -1,6 +1,5 @@
-# blackjack
+# Black Jack
 CUIでブラックジャックがあそべるだけのスクリプト
-## インストールから実行まで
-1. Python 3.11をダウンロードする
-2. このレポジトリのファイルをすべてダウンロードする
-3. main.pyをコマンドラインで実行
+## ダウンロードから実行まで
+1. ここからダウンロード URL: https://github.com/b-k-ideta/blackjack/releases/download/v1.0/blackjack.zip
+2. 解凍してblackjack.exeを起動
