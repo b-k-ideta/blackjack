@@ -104,15 +104,18 @@ class Controller:
                 # player.add_cards(card2)
                 for i in range(2):
                     com.add_cards(game_obj.draw_deck())
-                main_display()
-                if player.can_split == True:
-                    views.split_message()
-                    pl_input = self.player_input()
-                    match pl_input:
-                        case 0:
-                            player.card_split(game_obj.draw_deck())
-                        case 1:
-                            pass  
+                while 1:
+                    main_display()
+                    if player.can_split() == True:
+                        views.split_message()
+                        pl_input = self.player_input()
+                        match pl_input:
+                            case 0:
+                                player.card_split(game_obj.draw_deck())
+                            case 1:
+                                break
+                    else:
+                        break  
                 game_condition()
                 if self.loop_flag == False:
                     break

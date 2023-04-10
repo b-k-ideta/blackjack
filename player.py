@@ -79,10 +79,9 @@ class Player:
     def player_stand(self):
         return self.__stand
     
-    def can_split(self, first_turn=False):
-        if first_turn == True:
-            if self.__cards[0].number == self.__cards[1].number:
-                return True
+    def can_split(self):
+        if self.__cards[0].number == self.__cards[1].number:
+            return True
     
     def card_split(self,card):
         self.__cards.pop()

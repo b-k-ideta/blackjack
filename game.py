@@ -75,5 +75,5 @@ class Game:
     def add_total_game(self):
         self.__total_game += 1
 
-    def debug_bj(self):
-        return Trump("♠","A"),Trump("♠","K")
+    # def debug_bj(self):
+    #     return Trump("♠","K"),Trump("♠","K")
